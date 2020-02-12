@@ -1,5 +1,6 @@
 package com.basithkunimal.timer
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -64,6 +65,7 @@ class FullscreenActivity : AppCompatActivity() {
         // while interacting with the UI.
 //        dummy_button.setOnTouchListener(mDelayHideTouchListener)
         val myWebView: WebView = findViewById(R.id.webview)
+        myWebView.setBackgroundColor(Color.TRANSPARENT)
         myWebView.loadUrl("https://bazi-timer.netlify.com/")
         myWebView.settings.javaScriptEnabled = true
     }
